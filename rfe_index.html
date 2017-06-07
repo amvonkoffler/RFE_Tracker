@@ -19,12 +19,13 @@
     </ul>
   </div>
 </nav>
+<br>
 <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a href="#">RFE Tracker</a></li>
-  <li role="presentation"><a href="#">Tab 2</a></li>
-  <li role="presentation"><a href="#">Tab 3</a></li>
-  <li role="presentation"><a href="#">Tab 4</a></li>
-  <li role="presentation"><a href="#">Tab 5</a></li>
+  <li role="presentation"><a href="#">Create Visa</a></li>
+  <li role="presentation"><a href="#">Fragoman</a></li>
+  <li role="presentation"><a href="#">LCA</a></li>
+  <li role="presentation"><a href="#">Image Now</a></li>
 </ul>
 <br>
 <h1>Welcome Name!</h1>
@@ -32,7 +33,7 @@
 <p>Here you will be able to keep track of all RFEs sent to Capgemini by USCIS.</p>
 
 
-<!-- Create Search Bar similar to APRO one -->
+<!-- IMPORTANT:  Create Search Bar similar to APRO one -->
 <!--   <div class="col-lg-6">
     <div class="input-group">
     <label for="exampleInputEmail1">APRO No.</label>
@@ -46,102 +47,105 @@
     </div> -->
 
 <!-- Button to launch a from to create a new entree -->
-  <button id="createRFE" onclick="createRFE()" type="submit" class="btn btn-primary">Add RFE</button>
+  <button id="createRFE" onclick="createRFE()" type="submit" class="btn btn-primary">Add New RFE</button>
 <br>
 <br>
 <br>
-
 <div class="row">
   <div class="col-lg-6">
-    <div class="input-group">
+  <div class="input-group">
     <label for="exampleInputEmail1">APRO No.</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+  <div class="input-group">
+    <label for="exampleInputEmail1">Surname</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+    <div class="input-group">
+    <label for="exampleInputEmail1">Case Type</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+        <div class="input-group">
+    <label for="exampleInputEmail1">Legal Review</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+        <div class="input-group">
+    <label for="exampleInputEmail1">Visa Type</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+        <div class="input-group">
+    <label for="exampleInputEmail1">Tracking No.</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+    <div class="input-group">
+    <label for="exampleInputEmail1">Onsite Filing Team</label>
       <input type="text" class="form-control" aria-label="...">
     </div>
   </div>
   <div class="col-lg-6">
+  <div class="input-group">
+    <label for="exampleInputEmail1">PERNR No.</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+  <div class="input-group">
+    <label for="exampleInputEmail1">Name</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
     <div class="input-group">
-    <label for="exampleInputEmail1">APRO No.</label>
+    <label for="exampleInputEmail1">Expiration Date</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+    <div class="input-group">
+    <label for="exampleInputEmail1">Date Shipped</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+        <div class="input-group">
+    <label for="exampleInputEmail1">Filing Fee</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div><br>
+        <div class="input-group">
+    <label for="exampleInputEmail1">Service Center</label>
       <input type="text" class="form-control" aria-label="...">
     </div>
-
   </div>
-
-  
 </div>
-
-<!-- <form id="newRFE">
-  <div class="form-group">
-    <label for="exampleInputEmail1">APRO No.</label>
-    <input type="number" id="APRO" placeholder="Insert APRO No.">
-	</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">PERNR No.</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Surname</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Case Type</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Expiration Date</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Legal Review</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Legal Review</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-    <div class="form-group">
-    <label for="exampleInputEmail1">Date Shipped</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div> 
-    <div class="form-group">
-    <label for="exampleInputEmail1">Visa Type</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Filing Fee</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Tracking No.</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Service Center</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	  <div class="form-group">
-    <label for="exampleInputEmail1">Onsite Filing Team</label>
-    <input type="number" class="form-control" id="APRO" aria-describedby="emailHelp" placeholder="Insert PERNR No.">
-	</div>
-	 <div class="form-group">
-    <label for="exampleInputFile">Upload RFE</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+ <br>
+  <fieldset class="form-group">
+    <legend>Evidence Requested</legend>
+    <div class="form-check">
+      <label class="checkbox-inline"><input type="checkbox" value="">Form I-129, Petition for a Nonimmigrant Worker H-1B, Temporaty Worker in a Specialty Occupation.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Public Law 114-113 Additional L-1 and H-1B Fee.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Evidence Pertaining to the Proffered Position.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Evidence Pertaining to Completion of a Bachelor's of Higher Degree in a Specific Specialty.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Evidence Pertaining to the Employer-Employee Relationship.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Itinerary of Employment and Work Site Information.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Right to Control.</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">General Requests.</label>
   </div>
- -->  <br>
+  <br>
   <fieldset class="form-group">
     <legend>Is this employee part of H1B CAP?</legend>
     <div class="form-check">
       <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
       <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit Form</button>
+
   </div>
-  <br>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <br><br>
+  <fieldset class="form-group">
+    <legend>Email a Copy</legend>
+    <div class="input-group">
+    <label for="exampleInputEmail1">Email</label>
+      <input type="text" class="form-control" aria-label="...">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Send Email</button>
+</div>
 </form>
 </div>
 </body>
+
 <script>
 	function createRFE() {
     document.getElementById("createRFE").innerHTML = "Hello World";
